@@ -17,22 +17,125 @@ body {
     display: flex; /*porque os ícones ficam um ao lado do outro*/
     width: 100%; /*para ocupar toda largura da página*/
     justify-content: space-around; /*os itens ficam com espaço entre si e margens dos lados*/
-    padding: 10px;
+    padding: 10px 0;
+    height: 44px;
+    transition: transform 500ms ease;
 }
 
 .iconesup i {
     font-size: 1.5rem;
-    color: #dadfe6
+    color: #dadfe6;
 }
 
 .iconesup i:nth-child(1) /*escolhe o primeiro ou a ordem dentro do parenteses*/ {
     color: #fe466d;
 }
 
-.iconesinf {
-    display: flex; /*porque os ícones ficam um ao lado do outro*/
-    width: 100%; /*para ocupar toda largura da página*/
-    justify-content: space-around; /*os itens ficam com espaço entre si e margens dos lados*/
-    padding: 10px;
+/*Foto e icones inferiores*/
+.foto-e-icones {
+    height: calc(100vh - 44px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.foto {
+    width: 98vw;
+    height: 85vh;
+    background: url(../img/eu.jpeg) center center/cover;
+    border-radius: 10px; /*para as bordas ficarem arredondadas*/
+    display: flex;
+    align-items: flex-end; /*itens ficaram na parte inferior*/
+    color: #eee;
+    box-shadow: 0 2px 10px 0 rgba(136, 136, 136, 0.77); /*fica com sobra envolvada da foto*/
+}
+
+.foto-texto{
+    padding: 15px;
+    background: rgb(2, 0, 36); /*essa cor foi pegada no site css gradient*/
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+        180deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(35, 34, 65, 0) 0%,
+        rgba(0, 0, 0, 0.7) 52%
+    );
+    border-radius: 10px;  /*utilizando para arrumar o degradê da foto, o site css grafient ajuda */
+}
+.foto-nome-e-idade {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+    font-size: 1.3rem;
+
+}
+
+.foto-nome-e-idade h2:nth-child(2) {
+    margin-left: 1rem;
+}
+
+.bio {
+    line-height: 1.7rem;
+    font-size: 1.1rem;
+    font-weight: 500rem;
+}
+
+.iconesinf {
+    display: flex;
+    flex: auto;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.iconesinf:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.iconesup:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.icone {
+    background: #fff;
+    box-shadow: 0 2px 6px 0 rgba(112, 125, 134, 0.14);
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 2rem;
+    transition: transform 500ms ease;
+}
+
+.iconesinf .icone:nth-child(2) {
+    margin: 0 1rem;
+    color: #2bd1ff;
+    height: 48px;
+    width: 48px;
+    font-size: 1.5rem;
+}
+
+.iconesinf .icone:nth-child(1) {
+    color: #fd5068;
+}
+
+.iconesinf .icone:nth-child(3) {
+    color: #1be4a1;
+}
+
+/*visualização no pc*/
+
+
+@media (min-width: 1025px) /*quando for maior que 1025px, séra usado essas configurações*/ {
+    .foto {
+        width: 367px;
+        height: 684px;
+
+    }
+    .iconesup {
+        width: 400px;
+        margin: auto;
+    }
 }
