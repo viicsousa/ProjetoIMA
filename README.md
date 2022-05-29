@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <h1 align="center"> Clone do tinder </h1>
 
 ## Sobre o projeto
@@ -27,3 +28,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 
 
+=======
+# ProjetoIMA
+Criando projetos para curso IMA
+
+Neste repositório teremos clone de tinder e spotify
+>>>>>>> ba850a4757658996982409f7b4c01d3dec6fe373
