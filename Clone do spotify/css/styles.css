@@ -4,33 +4,6 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: url(../img/img.png);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    background-position: center center;
-    background-size: cover;
-    margin: auto;
     
 }
 
-
-
-.texto-sup {
-    background: rgba( 0, 0, 0, 0.5);
-    text-align: center;
-    display: flex;
-    border-spacing: 10px;
-    color: white;
-    justify-content: center;
-     /*espaço entre as palavras*/
-    font-size: 12px;
-    
-
-}
-
-.texto {
-    margin-left: 50px;
-    
-    
-}
