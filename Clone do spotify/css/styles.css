@@ -1,84 +1,205 @@
+:root {
+    --default-green: #1db954;
+    --light-green: #1ed760;
+} /*colorir o botão spotify free*/
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: auto;
-
 }
 
-.texto-sup {
+.navbar {
     display: flex;
-    list-style: none;
-    gap: 10px;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 13px;
-    font-size: 13px;
+    color: white;
     position: fixed;
     top: 0px;
     width: 100%;
-    
 }
 
-.texto {
-    color: beige;
+.logo {
+    height: 30px;
+    width: auto;
 }
 
-.meio-pagina{
-    background: url(../img/img.jpg) center center/cover;
+.navbar-texto-sup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    font-size: 13px;
+}
+
+.textos {
+    list-style: none;
+    display: flex;
+    font-weight: bold;
+}
+
+.navbar-texto-sup ul li {
+    padding: 0 20px;
+    transition: all 300ms ease;
+}
+
+.navbar-texto-sup ul li:hover {
+    cursor: pointer;
+
+}
+
+.navbar-texto-sup ul li:nth-child(3){
+    border-right: 1px solid white;
+}
+
+.meio-pagina{ 
+    background: url(../img/imgfundo.webp) center center/cover;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: color;
-}
-.texto-inf {
-    display: flex;
-    background-color: black;
     color: white;
-    align-items: flex-end;
-    height: 100%;
-    width: 100%;
+    top: 0px;
 }
 
-.empresa {
-    list-style: none;
-    line-height: 30px;
-    font-size: 16px;  
-    padding-right: 30px;
-    
+.texto-meio {
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.texto-meio h3 {
+	font-size: 3rem;
+    margin-bottom: 10px;
 }
 
-.empresa p {
-    color: #919496;
-    font-size: 12px;
-    font-weight: bold;;
+.texto-meio p {
+	margin: 10px;
+	font-size: 0.9rem;
+}
+.botao-free {
+	background: var(--default-green);
+	color: white;
+	text-transform: uppercase;
+	padding: 15px 60px;
+	border: none;
+	border-radius: 30px;
+	letter-spacing: 1px;
+	font-weight: bold;
+	transition: all 300ms ease;
 }
 
-.comunidade {
-    list-style: none;
-    line-height: 30px;
-    font-size: 16px;  
-    padding-right: 30px;
+.botao-free:hover {
+	background: var(--light-green);
+	cursor: pointer;
 }
 
-.comunidade p {
-    color: #919496;
-    font-size: 12px;
-    font-weight: bold;
+
+/*footer*/ 
+.footer {
+	background: black;
+	color: white;
+	padding: 80px 0;
 }
 
-.links-uteis {
-    list-style: none;
-    line-height: 30px;
-    font-size: 16px;  
-    padding-right: 30px;
+.texto-inf {
+	display: flex;
+	width: 60%;
+	margin: auto;
+	justify-content: space-between;
 }
 
-.links-uteis p {
-    color: #919496;
-    font-size: 12px;
-    font-weight: bold;
+
+.footer-inicio {
+	margin: 0 60px;
+	list-style: none;
+}
+
+.footer-item {
+	margin: 15px 0;
+	transition: all 300ms ease;
+}
+
+.footer-item:hover {
+	color: var(--default-green);
+	cursor: pointer;
+}
+
+.footer-inicio p {
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #919496;
+	font-size: 0.8rem;
+}
+
+/* redes sociais */
+.rede-sociais {
+	display: flex;
+}
+
+.rede-sociais i {
+	margin: 0 20px;
+	font-size: 1.7rem;
+	transition: all 300ms ease;
+}
+
+.rede-sociais i:hover {
+	color: var(--default-green);
+	cursor: pointer;
+}
+
+/* Footer Info */
+.final {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	width: 60%;
+	margin: auto;
+	font-weight: bold;
+	color: #919496;
+	font-size: 0.75rem;
+	padding-top: 50px;
+}
+
+.itens-final {
+	display: flex;
+	list-style: none;
+}
+
+.item-final {
+	margin: 0 10px;
+	transition: all 300ms ease;
+}
+
+.item-final:hover {
+	color: var(--default-green);
+	cursor: pointer;
+}
+
+.bandeira {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.bandeira p {
+	transition: all 300ms ease;
+}
+
+.bandeira p:hover {
+	color: var(--default-green);
+	cursor: pointer;
+}
+
+.brazil {
+	height: 20px;
+	width: auto;
+	display: inline-block;
+	margin-left: 10px;
 }
