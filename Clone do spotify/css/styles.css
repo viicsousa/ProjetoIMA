@@ -65,7 +65,6 @@ body {
     background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: color;
     color: white;
-    top: 0px;
 }
 
 .texto-meio {
@@ -152,14 +151,14 @@ body {
 	color: var(--default-green);
 	cursor: pointer;
 }
-
+ 
 /* Footer Info */
-.final {
+.final { 
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
 	width: 60%;
-	margin: auto;
+    margin: auto;
 	font-weight: bold;
 	color: #919496;
 	font-size: 0.75rem;
@@ -185,7 +184,7 @@ body {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	margin-bottom: 10px;
+	
 }
 
 .bandeira p {
